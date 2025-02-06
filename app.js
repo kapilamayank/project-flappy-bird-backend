@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "http://127.0.0.1:5500", // Frontend origin
+  origin: "https://project-flappy-bird-frontend.vercel.app/", // Frontend origin
   credentials: true, // Allow cookies to be sent
 };
 app.use(cors(corsOptions));
