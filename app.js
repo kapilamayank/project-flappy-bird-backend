@@ -22,7 +22,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "https://project-flappy-bird-frontend-vcl5e48mx-mayank-kapilas-projects.vercel.app", // Frontend origin
+  origin: ["https://project-flappy-bird-frontend-vcl5e48mx-mayank-kapilas-projects.vercel.app",
+            "https://project-flappy-bird-frontend.vercel.app/"],
   credentials: true, // Allow cookies to be sent
 };
 app.use(cors(corsOptions));
